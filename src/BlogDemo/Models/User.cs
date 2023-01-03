@@ -1,4 +1,6 @@
-﻿namespace Blog.Models
+﻿using System.Collections.Generic;
+
+namespace Blog.Models
 {
     public class User
     {
@@ -15,5 +17,7 @@
         public string Image { get; set; }
 
         public string Slug { get; set; }
+
+        public List<Role> Roles { get; set; }
     }
 }

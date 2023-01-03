@@ -1,4 +1,4 @@
-﻿namespace BlogDemo.Models
+﻿namespace Blog.Models
 {
     public class Category
     {
