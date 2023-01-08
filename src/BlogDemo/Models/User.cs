@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Dapper.Contrib.Extensions;
+using System.Collections.Generic;
 
 namespace Blog.Models
 {
@@ -18,6 +19,9 @@ namespace Blog.Models
 
         public string Slug { get; set; }
 
+        [Write(false)]
         public List<Role> Roles { get; set; }
+
+        public User() => Roles = new List<Role>();
     }
 }
